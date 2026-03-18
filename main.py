@@ -9,7 +9,7 @@ background.color: #f0f8ff;
 }
 </style>
 """
-st.markdown(page.bg_color,unsafe_allow_html=True)
+st.markdown(page_bg_color,unsafe_allow_html=True)
 st.title("멈추기 게임")
 
 if st.button("게임시작!"):
