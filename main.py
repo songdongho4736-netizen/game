@@ -1,9 +1,18 @@
 import random as rd
 import streamlit as st
 
+#CSS 코드를 이용해 배경색 설정
+page.bg_color ="""
+<style>
+[data-testid="stAppViewContainer"]{
+background.color: #f0f8ff;
+}
+</style>
+"""
+st.markdown(page.bg_color,unsafe_allow_html=True)
 st.title("멈추기 게임")
 
-if st.button("game start"):
+if st.button("게임시작!"):
   num = rd.random()
   if num < 0.3:
     st.error("멈춰!")
