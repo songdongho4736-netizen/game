@@ -2,7 +2,7 @@ import random as rd
 import streamlit as st
 
 #CSS 코드를 이용해 배경색 설정
-page.bg_color ="""
+page_bg_color ="""
 <style>
 [data-testid="stAppViewContainer"]{
 background.color: #f0f8ff;
