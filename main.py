@@ -10,7 +10,7 @@ def set_background(main_bg):
   st.markdown(
    f"""
    <style>
-   [data-testid="stAppviewCotainer"] {{
+   [data-testid="stAppviewContainer"] {{
      background: url(data:image/jpeg;base64,{b64});
      background-size: cover;
      }}
