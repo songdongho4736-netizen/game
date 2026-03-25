@@ -16,7 +16,7 @@ def set_background(main_bg):
      }}
      </style>
      """,
-    unsafe_allow_html.True
+    unsafe_allow_html=True
     )
 
 #배경 이미지 함수 호출
