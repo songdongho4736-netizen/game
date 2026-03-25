@@ -39,7 +39,7 @@ st.title("멈추기 게임")
 col1,col2,col3 = st.columns([1,2,1])
 
 with col2:
-  st.image("background.jpg" , use_colum_width=True)
+  st.image("background.jpg" , use_column_width=True)
   if st.button(""):
     num = rd.random()
     if num < 0.3:
