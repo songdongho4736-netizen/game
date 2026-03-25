@@ -1,6 +1,28 @@
 import random as rd
 import streamlit as st
+import base64
 
+def set_background(main_bg):
+  with open(main_bg,"rb:) as f:
+    data = f.read()
+  b64 = base64.b64encode(adta).decode()
+
+  st.markdown(
+   f"""
+   <style>
+   [data-testid="stAppviewCotainer"] {{
+     background: url(data:image/jpeg;base64,{b64});
+     background-size: cover;
+     }}
+     </style>
+     """,
+    unsafe_allow_html.True
+    )
+
+#배경 이미지 함수 호출
+set_background(background.jpg)
+    
+  
 #CSS 코드를 이용해 배경색 설정
 page_bg_color ="""
 <style>
