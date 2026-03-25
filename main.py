@@ -12,7 +12,7 @@ def set_background(main_bg):
    <style>
    [data-testid="stAppViewContainer"] {{
      background: url(data:image/jpeg;base64,{b64});
-     background-size: cover;
+     background-size: contain;
      }}
      </style>
      """,
