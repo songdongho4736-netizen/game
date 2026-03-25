@@ -36,9 +36,13 @@ background-color: #F0FFFF;
 st.markdown(page_bg_color,unsafe_allow_html=True)
 st.title("멈추기 게임")
 
-if st.button("게임시작!"):
-  num = rd.random()
-  if num < 0.3:
-    st.error("멈춰!")
-  else:
-    st.success("통과!")
+col1,col2,col3 = st.columns({1,2,1})
+
+with col2:
+  st.image("background.jpg" , use_colum_width=True)
+  if st.button(""):
+    num = rd.random()
+    if num < 0.3:
+      st.error("멈춰!")
+    else:
+      st.success("통과!")
