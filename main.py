@@ -12,7 +12,7 @@ def set_background(main_bg):
      f"""
      <style>
      div.stbutton > button:first-child{
-       gackground_color: transparent;
+       background_color: transparent;
        border: none:
        padding: 0;
      }
