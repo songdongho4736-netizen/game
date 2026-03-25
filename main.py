@@ -3,7 +3,7 @@ import streamlit as st
 import base64
 
 def set_background(main_bg):
-  with open(main_bg,"rb:) as f:
+  with open(main_bg,"rb") as f:
     data = f.read()
   b64 = base64.b64encode(adta).decode()
 
