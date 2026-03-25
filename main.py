@@ -13,11 +13,13 @@ def set_background(main_bg):
    [data-testid="stAppViewContainer"] {{
      background: url(data:image/jpeg;base64,{b64});
      background-size: contain;
-     }}
-     </style>
-     """,
+     background-repeat: no-repeat;
+     background-position: center;
+    }}
+    </style>
+    """,
     unsafe_allow_html=True
-    )
+  )
 
 #배경 이미지 함수 호출
 set_background('background.jpg')
