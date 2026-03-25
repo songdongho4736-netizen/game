@@ -11,12 +11,11 @@ def set_background(main_bg):
     st.markdown(
      f"""
      <style>
-     [data-testid="stAppViewContainer"] {{
-       background: url(data:image/jpeg;base64,{b64});
-       background-size: 100% 100%;
-       background-repeat: no-repeat;
-       background-position: center;
-      }}
+     div.stbutton > button:first-child{
+       gackground_color: transparent;
+       border: none:
+       padding: 0;
+     }
       </style>
       """,
       unsafe_allow_html=True
@@ -41,7 +40,7 @@ st.title("멈추기 게임")
 col1,col2,col3 = st.columns([1,2,1])
 
 with col2:
-  st.image("background.jpg" , use_column_width=True)
+  st.image("background.jpg")
   if st.button(""):
     num = rd.random()
     if num < 0.3:
