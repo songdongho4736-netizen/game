@@ -20,7 +20,7 @@ def set_background(main_bg):
     )
 
 #배경 이미지 함수 호출
-set_background(background.jpg)
+set_background('background.jpg')
     
   
 #CSS 코드를 이용해 배경색 설정
