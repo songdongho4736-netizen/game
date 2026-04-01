@@ -40,7 +40,7 @@ with col2:
   #  img_data = base64.b64encode(f.read()).decode()
   st.image("background.jpg",use_column_with=True) 
  # if st.button(f'<ing src="data:image/jpeg;base64,{img_data}" width="300">',use_container_with=True):
-  if st.button("게임시작")
+  if st.button("게임시작"):
     num = rd.random()
     if num < 0.3:
       st.error("멈춰!")
