@@ -29,15 +29,14 @@ set_background('background.jpg')
 st.markdown("<h1 style='text-align: center; color: white;'>멈추기게임</h1>", unsafe_allow_html=True)
 
 #게임영역3등분
-col1,col2,col3 = st.columns([1,2,1])
+col1,col2 = st.columns([3,1])
 
 with col2:
- # with open("background.jpg","rb") as f:
-  #  img_data = base64.b64encode(f.read()).decode()
+  with open("background.jpg","rb") as f:
+    img_data = base64.b64encode(f.read()).decode()
   st.image("sponge.jpg")
   
- # if st.button(f'<ing src="data:image/jpeg;base64,{img_data}" width="300">',use_container_with=True):
-  if st.button("게임시작"):
+  if st.button(f'<ing src="data:image/jpeg;base64,{img_data}" width="150">',key ="game_btn"):
     num = rd.random()
     if num < 0.3:
       st.error("멈춰!")
