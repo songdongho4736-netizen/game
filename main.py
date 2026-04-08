@@ -22,7 +22,7 @@ def set_background(main_bg):
             background-image: url(data:image/jpeg;base64,{b64_sponge});
             background-size: cover;
             width: 300px;
-            
+            height: 500px;
       }}
       </style>
       """,
