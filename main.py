@@ -29,8 +29,8 @@ def set_background(main_bg):
       """,
       unsafe_allow_html=True
     )
-  with open("sponge.jpg","rb") as f:
-      b64_sponge = base64.b64encode(f.read()).decode()
+with open("sponge.jpg","rb") as f:
+    b64_sponge = base64.b64encode(f.read()).decode()
     #st.session_state.bg_set = True
 
 #배경 이미지 함수 호출
