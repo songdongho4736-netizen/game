@@ -18,6 +18,13 @@ def set_background(main_bg):
         background-position: center;
         background-attachnment: fixed;
       }}
+      button[kind="secondary"] {{
+            background-image: url(data:image/jpeg;base64,{b64_sponge});
+            background-size: cover;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* 둥근 버튼 */
+      }}
       </style>
       """,
       unsafe_allow_html=True
