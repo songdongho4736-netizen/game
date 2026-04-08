@@ -16,11 +16,7 @@ def set_background(main_bg):
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
-      }}
-      div.stbutton > button{{
-        background-color: transparent !important;
-        border: none !important;
-        background-position: center;
+        background-attachnment: fixed;
       }}
       </style>
       """,
@@ -38,7 +34,8 @@ col1,col2,col3 = st.columns([1,2,1])
 with col2:
  # with open("background.jpg","rb") as f:
   #  img_data = base64.b64encode(f.read()).decode()
-  st.image("background.jpg")
+  st.image("sponge.jpg")
+  
  # if st.button(f'<ing src="data:image/jpeg;base64,{img_data}" width="300">',use_container_with=True):
   if st.button("게임시작"):
     num = rd.random()
