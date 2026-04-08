@@ -29,6 +29,8 @@ def set_background(main_bg):
       """,
       unsafe_allow_html=True
     )
+  with open("sponge.jpg","rb") as f:
+      b64_sponge = base64.b64encode(f.read()).decode()
     #st.session_state.bg_set = True
 
 #배경 이미지 함수 호출
@@ -44,7 +46,7 @@ col1,col2 = st.columns([3,1])
 with col2:
   st.image("sponge.jpg")
   
-  if st.button('이미지를 클릭하면 게임시작'):
+  if st.button(" ",key="sponge_btn"):
     st.session_state.game_started = True
     num = rd.random()
     if num < 0.3:
