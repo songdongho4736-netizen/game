@@ -23,7 +23,7 @@ def set_background(main_bg):
             background-size: cover;
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* 둥근 버튼 */
+            
       }}
       </style>
       """,
