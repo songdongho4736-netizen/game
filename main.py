@@ -26,17 +26,19 @@ def set_background(main_bg):
 
 #배경 이미지 함수 호출
 set_background('background.jpg')
+
+if 'game_started' not in st.session_state:
+  st.session_state.game_started = False
 st.markdown("<h1 style='text-align: center; color: white;'>멈추기게임</h1>", unsafe_allow_html=True)
 
 #게임영역3등분
 col1,col2 = st.columns([3,1])
 
 with col2:
-  with open("background.jpg","rb") as f:
-    img_data = base64.b64encode(f.read()).decode()
   st.image("sponge.jpg")
   
-  if st.button(f'<ing src="data:image/jpeg;base64,{img_data}" width="150">',key ="game_btn"):
+  if st.button('이미지를 클릭하면 게임시작'):
+    st.session_state.game_started = True
     num = rd.random()
     if num < 0.3:
       st.error("멈춰!")
