@@ -32,7 +32,7 @@ def set_background(main_bg):
     #st.session_state.bg_set = True
 
 #배경 이미지 함수 호출
-set_background('background.jpg')
+set_background("background.jpg")
 
 if 'game_started' not in st.session_state:
   st.session_state.game_started = False
