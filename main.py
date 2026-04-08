@@ -44,7 +44,7 @@ st.markdown("<h1 style='text-align: center; color: white;'>멈추기게임</h1>"
 col1,col2 = st.columns([3,1])
 
 with col2:
-  st.image("sponge.jpg")
+  #st.image("sponge.jpg")
   
   if st.button(" ",key="sponge_btn"):
     st.session_state.game_started = True
